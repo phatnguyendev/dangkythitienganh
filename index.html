@@ -2,59 +2,83 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Đăng ký thi tiếng Anh</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-  <h2>ĐĂNG KÝ THI TIẾNG ANH</h2>
+<div class="page">
+  <div class="container">
+    <h2>ĐĂNG KÝ THI TIẾNG ANH</h2>
 
-  <form id="registerForm">
-    <label>Họ và tên</label>
-    <input type="text" id="hoTen" required>
+    <form id="registerForm">
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Họ và tên</label>
+          <input type="text" id="hoTen" required>
+        </div>
 
-    <label>Giới tính</label>
-    <select id="gioiTinh" required>
-      <option value="">-- Chọn giới tính --</option>
-      <option value="Nam">Nam</option>
-      <option value="Nữ">Nữ</option>
-    </select>
+        <div class="form-group">
+          <label>Giới tính</label>
+          <select id="gioiTinh" required>
+            <option value="">-- Chọn giới tính --</option>
+            <option value="Nam">Nam</option>
+            <option value="Nữ">Nữ</option>
+          </select>
+        </div>
 
-    <label>Ngày sinh</label>
-    <input type="date" id="ngaySinh" required>
+        <div class="form-group">
+          <label>Ngày sinh</label>
+          <input type="date" id="ngaySinh" required>
+        </div>
 
-    <label>Nơi sinh</label>
-    <input type="text" id="noiSinh" required>
+        <div class="form-group">
+          <label>Nơi sinh</label>
+          <input type="text" id="noiSinh" required>
+        </div>
 
-    <label>Số CCCD</label>
-    <input type="text" id="cccd" required>
+        <div class="form-group">
+          <label>Số CCCD</label>
+          <input type="text" id="cccd" inputmode="numeric" required>
+        </div>
 
-    <label>Số điện thoại</label>
-    <input type="text" id="sdt" required>
+        <div class="form-group">
+          <label>Số điện thoại</label>
+          <input type="tel" id="sdt" inputmode="numeric" required>
+        </div>
 
-    <label>Trình độ đăng ký</label>
-    <select id="trinhDo" required>
-      <option value="">-- Chọn trình độ --</option>
-      <option value="A1">A1</option>
-      <option value="A2">A2</option>
-      <option value="B1">B1</option>
-      <option value="B2">B2</option>
-    </select>
+        <div class="form-group full">
+          <label>Trình độ đăng ký</label>
+          <select id="trinhDo" required>
+            <option value="">-- Chọn trình độ --</option>
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="B1">B1</option>
+            <option value="B2">B2</option>
+          </select>
+        </div>
 
-    <label>Mặt trước căn cước</label>
-    <input type="file" id="matTruocCanCuoc" accept="image/*,.pdf" required>
+        <div class="form-group full">
+          <label>Mặt trước căn cước</label>
+          <input type="file" id="matTruocCanCuoc" accept="image/*,.pdf" required>
+        </div>
 
-    <label>Mặt sau căn cước</label>
-    <input type="file" id="matSauCanCuoc" accept="image/*,.pdf" required>
+        <div class="form-group full">
+          <label>Mặt sau căn cước</label>
+          <input type="file" id="matSauCanCuoc" accept="image/*,.pdf" required>
+        </div>
 
-    <label>Ảnh thẻ</label>
-    <input type="file" id="anhThe" accept="image/*" required>
+        <div class="form-group full">
+          <label>Ảnh thẻ</label>
+          <input type="file" id="anhThe" accept="image/*" required>
+        </div>
+      </div>
 
-    <button type="submit">Gửi đăng ký</button>
-
-    <p id="message"></p>
-  </form>
+      <button type="submit">Gửi đăng ký</button>
+      <p id="message"></p>
+    </form>
+  </div>
 </div>
 
 <script src="script.js"></script>
