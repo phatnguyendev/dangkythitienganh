@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng ký thi tiếng Anh</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>ĐĂNG KÝ THI TIẾNG ANH</h2>
+
+  <form id="registerForm">
+    <label>Họ và tên</label>
+    <input type="text" id="hoTen" required>
+
+    <label>Giới tính</label>
+    <select id="gioiTinh" required>
+      <option value="">-- Chọn giới tính --</option>
+      <option value="Nam">Nam</option>
+      <option value="Nữ">Nữ</option>
+    </select>
+
+    <label>Ngày sinh</label>
+    <input type="date" id="ngaySinh" required>
+
+    <label>Nơi sinh</label>
+    <input type="text" id="noiSinh" required>
+
+    <label>Số CCCD</label>
+    <input type="text" id="cccd" required>
+
+    <label>Số điện thoại</label>
+    <input type="text" id="sdt" required>
+
+    <label>Trình độ đăng ký</label>
+    <select id="trinhDo" required>
+      <option value="">-- Chọn trình độ --</option>
+      <option value="A1">A1</option>
+      <option value="A2">A2</option>
+      <option value="B1">B1</option>
+      <option value="B2">B2</option>
+    </select>
+
+    <label>Mặt trước căn cước</label>
+    <input type="file" id="matTruocCanCuoc" accept="image/*,.pdf" required>
+
+    <label>Mặt sau căn cước</label>
+    <input type="file" id="matSauCanCuoc" accept="image/*,.pdf" required>
+
+    <label>Ảnh thẻ</label>
+    <input type="file" id="anhThe" accept="image/*" required>
+
+    <button type="submit">Gửi đăng ký</button>
+
+    <p id="message"></p>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
