@@ -1,89 +1,128 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Đăng ký thi tiếng Anh</title>
+
+  <title>Đăng ký thi tiếng Anh A2 B1 B2 - Trung tâm Ngoại ngữ Nha Trang</title>
+
+  <meta name="description"
+    content="Đăng ký thi tiếng Anh A2, B1, B2 trực tuyến. Nộp hồ sơ, tải CCCD, ảnh thẻ và hoàn tất đăng ký nhanh chóng.">
+
+  <meta name="keywords"
+    content="đăng ký thi tiếng anh, thi a2, thi b1, thi b2, chứng chỉ tiếng anh, đăng ký trực tuyến">
+
+  <meta name="author" content="Trung tâm Ngoại ngữ Nha Trang">
+
+  <meta name="robots" content="index,follow,max-image-preview:large">
+
+  <link rel="canonical" href="https://dangky.mitechcenter.vn/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Đăng ký thi tiếng Anh A2 B1 B2">
+  <meta property="og:description"
+    content="Đăng ký thi tiếng Anh trực tuyến, nộp hồ sơ và hoàn thiện thủ tục nhanh chóng.">
+  <meta property="og:url" content="https://dangky.mitechcenter.vn/">
+  <meta property="og:image" content="https://dangky.mitechcenter.vn/images/banner.png">
+
+  <!-- Facebook -->
+  <meta property="og:site_name" content="Trung tâm Ngoại ngữ Nha Trang">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Đăng ký thi tiếng Anh A2 B1 B2">
+  <meta name="twitter:description" content="Đăng ký thi tiếng Anh trực tuyến nhanh chóng và thuận tiện.">
+  <meta name="twitter:image" content="https://dangky.mitechcenter.vn/images/banner.png">
+
+  <link rel="icon" href="./images/english.png">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="page">
-  <div class="container">
-    <h2>ĐĂNG KÝ THI TIẾNG ANH</h2>
-
-    <form id="registerForm">
-      <div class="form-grid">
-        <div class="form-group">
-          <label>Họ và tên <span style="font-style: italic;color: red;">*</span></label>
-          <input type="text" id="hoTen" required>
-        </div>
-
-        <div class="form-group">
-          <label>Giới tính <span style="font-style: italic;color: red;">*</span></label>
-          <select id="gioiTinh" required>
-            <option value="">-- Chọn giới tính --</option>
-            <option value="Nam">Nam</option>
-            <option value="Nữ">Nữ</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label>Ngày sinh <span style="font-style: italic;color: red;">*</span></label>
-          <input type="date" id="ngaySinh" required>
-        </div>
-
-        <div class="form-group">
-          <label>Nơi sinh (tỉnh sau sát nhập) <span style="font-style: italic;color: red;">*</span></label>
-          <input type="text" id="noiSinh" required>
-        </div>
-
-        <div class="form-group">
-          <label>Số CCCD <span style="font-style: italic;color: red;">*</span></label>
-          <input type="text" id="cccd" inputmode="numeric" required>
-        </div>
-
-        <div class="form-group">
-          <label>Số điện thoại <span style="font-style: italic;color: red;">*</span></label>
-          <input type="tel" id="sdt" inputmode="numeric" required>
-        </div>
-
-        <div class="form-group full">
-          <label>Trình độ đăng ký <span style="font-style: italic;color: red;">*</span></label>
-          <select id="trinhDo" required>
-            <option value="">-- Chọn trình độ --</option>
-            <!-- <option value="A1">A1</option> -->
-            <option value="A2">A2</option>
-            <option value="B1">B1</option>
-            <option value="B2">B2</option>
-          </select>
-        </div>
-
-        <div class="form-group full">
-          <label>Ảnh mặt trước căn cước <span style="font-style: italic;color: red;">*</span></label>
-          <span class="note">File ảnh hoặc file PDF</span>
-          <input type="file" id="matTruocCanCuoc" accept="image/*,.pdf" required>
-        </div>
-
-        <div class="form-group full">
-          <label>Ảnh mặt sau căn cước <span style="font-style: italic;color: red;">*</span></label>
-          <span class="note">File ảnh hoặc file PDF</span>
-          <input type="file" id="matSauCanCuoc" accept="image/*,.pdf" required>
-        </div>
-
-        <div class="form-group full">
-          <label>Ảnh thẻ <span style="font-style: italic;color: red;">*</span></label>
-          <span class="note">File ảnh</span>
-          <input type="file" id="anhThe" accept="image/*" required>
-        </div>
+  <div class="page">
+    <div class="container">
+      <h1 style="display: none;">ĐĂNG KÝ THI TIẾNG ANH</h1>
+      <div class="hero-banner" style="margin-bottom: 20px;">
+        <img src="./images/banner.png" alt="banner" style="width: 100%; border-radius: 15px;">
       </div>
 
-      <button type="submit">Gửi đăng ký</button>
-      <p id="message"></p>
-    </form>
-  </div>
-</div>
+      <form id="registerForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Họ và tên <span style="font-style: italic;color: red;">*</span></label>
+            <input type="text" id="hoTen" required>
+          </div>
 
-<script src="script.js"></script>
+          <div class="form-group">
+            <label>Giới tính <span style="font-style: italic;color: red;">*</span></label>
+            <select id="gioiTinh" required>
+              <option value="">-- Chọn giới tính --</option>
+              <option value="Nam">Nam</option>
+              <option value="Nữ">Nữ</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Ngày sinh <span style="font-style: italic;color: red;">*</span></label>
+            <input type="date" id="ngaySinh" required>
+          </div>
+
+          <div class="form-group">
+            <label>Nơi sinh (tỉnh sau sát nhập) <span style="font-style: italic;color: red;">*</span></label>
+            <input type="text" id="noiSinh" required>
+          </div>
+
+          <div class="form-group">
+            <label>Số CCCD <span style="font-style: italic;color: red;">*</span></label>
+            <input type="text" id="cccd" inputmode="numeric" required>
+          </div>
+
+          <div class="form-group">
+            <label>Số điện thoại <span style="font-style: italic;color: red;">*</span></label>
+            <input type="tel" id="sdt" inputmode="numeric" required>
+          </div>
+
+          <div class="form-group full">
+            <label>Trình độ đăng ký <span style="font-style: italic;color: red;">*</span></label>
+            <select id="trinhDo" required>
+              <option value="">-- Chọn trình độ --</option>
+              <!-- <option value="A1">A1</option> -->
+              <option value="A2">A2</option>
+              <option value="B1">B1</option>
+              <option value="B2">B2</option>
+            </select>
+          </div>
+
+          <div class="form-group full">
+            <label>Ảnh mặt trước căn cước <span style="font-style: italic;color: red;">*</span></label>
+            <span class="note">File ảnh hoặc file PDF</span>
+            <input type="file" id="matTruocCanCuoc" accept="image/*,.pdf" required>
+          </div>
+
+          <div class="form-group full">
+            <label>Ảnh mặt sau căn cước <span style="font-style: italic;color: red;">*</span></label>
+            <span class="note">File ảnh hoặc file PDF</span>
+            <input type="file" id="matSauCanCuoc" accept="image/*,.pdf" required>
+          </div>
+
+          <div class="form-group full">
+            <label>Ảnh thẻ <span style="font-style: italic;color: red;">*</span></label>
+            <span class="note">File ảnh</span>
+            <input type="file" id="anhThe" accept="image/*" required>
+          </div>
+        </div>
+
+        <button type="submit">Gửi đăng ký</button>
+        <p id="message"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
