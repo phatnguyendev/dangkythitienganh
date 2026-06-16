@@ -15,12 +15,12 @@
     <form id="registerForm">
       <div class="form-grid">
         <div class="form-group">
-          <label>Họ và tên</label>
+          <label>Họ và tên <span style="font-style: italic;color: red;">*</span></label>
           <input type="text" id="hoTen" required>
         </div>
 
         <div class="form-group">
-          <label>Giới tính</label>
+          <label>Giới tính <span style="font-style: italic;color: red;">*</span></label>
           <select id="gioiTinh" required>
             <option value="">-- Chọn giới tính --</option>
             <option value="Nam">Nam</option>
@@ -29,30 +29,30 @@
         </div>
 
         <div class="form-group">
-          <label>Ngày sinh</label>
+          <label>Ngày sinh <span style="font-style: italic;color: red;">*</span></label>
           <input type="date" id="ngaySinh" required>
         </div>
 
         <div class="form-group">
-          <label>Nơi sinh</label>
+          <label>Nơi sinh (tỉnh sau sát nhập) <span style="font-style: italic;color: red;">*</span></label>
           <input type="text" id="noiSinh" required>
         </div>
 
         <div class="form-group">
-          <label>Số CCCD</label>
+          <label>Số CCCD <span style="font-style: italic;color: red;">*</span></label>
           <input type="text" id="cccd" inputmode="numeric" required>
         </div>
 
         <div class="form-group">
-          <label>Số điện thoại</label>
+          <label>Số điện thoại <span style="font-style: italic;color: red;">*</span></label>
           <input type="tel" id="sdt" inputmode="numeric" required>
         </div>
 
         <div class="form-group full">
-          <label>Trình độ đăng ký</label>
+          <label>Trình độ đăng ký <span style="font-style: italic;color: red;">*</span></label>
           <select id="trinhDo" required>
             <option value="">-- Chọn trình độ --</option>
-            <option value="A1">A1</option>
+            <!-- <option value="A1">A1</option> -->
             <option value="A2">A2</option>
             <option value="B1">B1</option>
             <option value="B2">B2</option>
@@ -60,17 +60,20 @@
         </div>
 
         <div class="form-group full">
-          <label>Mặt trước căn cước</label>
+          <label>Ảnh mặt trước căn cước <span style="font-style: italic;color: red;">*</span></label>
+          <span class="note">File ảnh hoặc file PDF</span>
           <input type="file" id="matTruocCanCuoc" accept="image/*,.pdf" required>
         </div>
 
         <div class="form-group full">
-          <label>Mặt sau căn cước</label>
+          <label>Ảnh mặt sau căn cước <span style="font-style: italic;color: red;">*</span></label>
+          <span class="note">File ảnh hoặc file PDF</span>
           <input type="file" id="matSauCanCuoc" accept="image/*,.pdf" required>
         </div>
 
         <div class="form-group full">
-          <label>Ảnh thẻ</label>
+          <label>Ảnh thẻ <span style="font-style: italic;color: red;">*</span></label>
+          <span class="note">File ảnh</span>
           <input type="file" id="anhThe" accept="image/*" required>
         </div>
       </div>

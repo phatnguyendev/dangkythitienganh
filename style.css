@@ -42,7 +42,12 @@ h2 {
 .form-group {
   width: 100%;
 }
-
+.form-group .note{
+      font-size: 14px;
+    font-style: italic;
+    display: block;
+    margin-bottom: 5px;
+}
 .form-group.full {
   grid-column: 1 / -1;
 }
