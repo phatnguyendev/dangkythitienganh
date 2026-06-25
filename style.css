@@ -9,6 +9,67 @@ body {
   color: #222;
 }
 
+/* slide  */
+.hero-banner {
+  margin-bottom: 20px;
+}
+
+.hero-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.hero-slider .slide {
+  display: none;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.hero-slider .slide.active {
+  display: block;
+}
+
+.hero-slider button {
+  width: auto !important;
+  margin: 0 !important;
+  padding: 10px 14px !important;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.hero-slider .prev {
+  left: 12px;
+}
+
+.hero-slider .next {
+  right: 12px;
+}
+.hero-slider .slider-btn {
+  width: 42px !important;
+  height: 42px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media (max-width: 600px) {
+  .hero-slider button {
+    padding: 7px 10px;
+    font-size: 18px;
+  }
+}
+
+/* end slide  */
 .page {
   min-height: 100vh;
   padding: 24px 12px;
